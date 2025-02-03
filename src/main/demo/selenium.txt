@@ -1,0 +1,730 @@
+DAY-1  selenium.dev
+SELENIUM AUTOMATION TESTING TOOL
+
+Jason Huggins -- 2004--THOUGHT WORKS
+ 
+MERCURY-QTP- HP-  - Quick Test Professional -->Automation Tool
+
+Selenium --> Free Source
+
+SELENIUM-2004- AUTOMATION TESTING TOOL
+
+Selenium is basically used to automate the testing across various web browsers. 
+It supports various browsers like Chrome, Mozilla Firefox, Safari, 
+and IE(edge), and you can very easily automate browser testing across these browsers using Selenium WebDriver
+
+---------------------------------------------------------------------------------
+
+Browsers-:
+Firefox, IE , Safari , Chrome , Opera
+
+----------------------------------------------------------------------------------
+OS-:
+Windows, Apple OS X , Linux
+-----------------------------------------------------------------------------------
+-
+Languages-:
+C# , Java , Java Script ,Ruby ,Python
+------------------------------------------------------------------------------------
+version-:
+Version : 3.141.59  (LTS)-Stable version
+Latest Version: 4.23.1 (Stable)
+
+-----------------------------------------------------------------------------------
+WEB APPLICATIONS-:
+
+There are many types of testing that can be done with Selenium.
+You can do  functional testing {smoke testing,sanity testing, UI testing, regression testing, and more}.
+
+----------------------------------------------------------------------------------
+
+gmail-modules
+1.login page -dev (module/feature) (user and pass - valid)-ok (invalid) - error- not okay
+2.Home page 
+integreate  - Regression
+
+Selenium Components :
+			Selenium IDE 
+
+			Selenium RC
+
+			Selenium WebDriver
+
+			Selenium Grid
+Selenium IDE :
+
+		IDE - > Integrated Development Environment
+
+		Record and play back tool, It does not required coding knowledge
+
+		We cannot be used for compliment test Cases.
+Selenium RC :
+
+		RC - > Remote Control
+		It can be used only in FireFox .
+
+		In RC the installations are complicated.
+
+		It cannot directly interact with Browser.
+Selenium WebDriver :
+
+		   It is a automation testing tool.
+
+		   It Supports Different Browsers Along With Different Kind Of Programming languages.
+
+		   It Directly Interact With Browser.
+
+Selenium Grid : 
+
+		It Is A HubNode Concept.
+
+		It Execute Test Cases Parallely And It Reduces The Execute Time.
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+Selenium                                                QTP
+Open source					Commercial & Costly
+Java,Python,Php,Ruby,Pearl				VB Scripts- visual basic scripts
+Firefox, Chrome,IE,Safari,Opera			IE,FF- internet explorer - firefox
+Windows,MAC,Linux				Windows
+Web app						Desktop,Web,Mobile
+More Flexible					Flexible
+
+--------------------------------------------------------------------------------------------------------------------------------
+Web Application:
+Browser -  E-commerce ., Web application which is working with browsers
+
+--------------------------------------------------------------------------------------------------------------------------------
+Mobile Application:
+Whatsapp,Messenger,Instagram,Snapchat
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Desktop Application:
+Adobe Photoshop, File explorer, MS Office
+
+
+             				    HOW TO DOWNLOAD SELENIUM
+Steps : 
+	First Download Selenium Standard Version Jar.
+	Add The Jar Into Our Project . 
+Right Click In Project ---->  Build path -----> Configure Build Path -------> Add External Jar In Libraries.
+	Create A Driver Folder in project  .
+	Download ChromeDriver.exe file  download and paste 	
+	Extract That Zip  File And Copy The File And paste into Driver Folder.
+
+***********************************************************************************************************************************************************************************
+4.19.1 
+3.141.59
+                           Browser Launch : 
+ 
+++			    Chrome                                                    IE                                             FireFox
+
+Driver name            webdriver.chrome.driver                                 webdriver.ie.driver                             webdriver.gecko.driver
+
+
+File Name              chromedriver.exe                                        IEDriverServer.exe                              geckodriver.exe
+
+
+Class Name             ChromeDriver()                                          InternetExplorerDriver()                        FirefoxDriver()
+
+System.setproperties("drivername","location of the driver");
+
+System.setproperties("webdriver.ie.driver ","./driver/IEDriverServer.exe");
+
+create a project----> oops ---> folder(driver)
+
+
+InternetExplorerDriver driver = new InternetExplorerDriver();
+
+module path
+jre 
+                                                  add external jars
+class path 
+folder 
+
+
+Selenium Architeture:--
+***************Refer the Screenshot shared in watsapp
+
+Day: 2 
+*************Selenium WebDriver - Browser Commands**********************************
+A.WebDriver 🡪 Interface
+1.get()
+This method will launch a new browser and opens the given URL in the browser instance.
+Example: driver.get();
+
+2.getTitle() 
+To Gets the title of the current web page.
+Example: driver.getTitle();
+3.getCurrentUrl()
+Gets a string representing the current URL that the browser is opened.
+Example:driver.getCurrentUrl();
+4.getPageSource()
+Get the source of the currently loaded page.
+
+Example: driver.getPageSource();
+B.Navigate methods:
+    to---->it will navigate to the next Url
+    back----->back to prevoius page.
+   forward ---->forward to the next page.
+   refresh--->it refresh current page.
+  
+C.Manage
+  driver.manage().window().maximize
+ close------>it close the current tab
+quit---->it will close the Browser
+
+*****************************************************************************************************************************************
+Day- 3 
+Selenium WebDriver ---> locators      --> webPage(elements)
+
+Selenium WebDriver can't interact with the webpage directly ---> use the locators to locate the webElement from the webpage
+
+
+Selenium WebDriver --> not able to locate the element in the Webpage
+locators---> locate the element from webPage--->using DOM-Document object model
+
+identify- element in webPage
+perform some action over the element
+Locators : 
+
+	  Using Locators To Find The WebElement.
+
+	  Locators Are Present In By (abstract class).
+
+
+Document Object Model ( DOM ) 
+
+In DOM  
+<html>
+<head>..</head>
+<body>.
+	<iframe>
+	document
+	<html>....
+	<head>..</head>
+	<body>
+
+	</body>
+
+	</html>
+	</iframe>
+
+.</body>
+</html>
+
+
+
+<html> 
+<Head> Title </Head>
+<Body>
+<li>,<tr>,<td>,<th><table>,<input>,<a>,<br>,
+<ul>,<ol>,<iframe>,<img>,<p>,<button>,<option>
+<center>,<form>,<label>,<link>,<script>,<div> 
+
+	<tagName attributeName = " attributeValue"/>  <button id="button" name="button">
+
+	<tagName Create An Account />
+</Body>
+</html>
+
+
+tagName Must Be In Pink Color.
+
+attributeName must be in Orange Color.
+
+attributeValue must be in Blue Color.
+
+Text must be in Black Color.
+
+***********************************************************************************************************************************************************************
+
+
+Locators : 
+
+Attribute name --> orange
+          id
+
+	  name 
+
+	  className or class
+	
+	  tagName  
+
+	  LinkText  //a
+
+	  PartialLink Text  //a
+
+	  x-path 
+
+	  CSS Selector
+
+
+
+
+***********************************************************************************************	
+Day - 3
+X-Path : 
+
+	Absolute x -path
+html/body/div/a/div
+	Relative x-path
+//
+	
+Relative x-path : 
+
+		 it starts with double forward slash (//).
+
+		 it will search the middle of the DOM Page
+
+Syntax : 
+
+	//tagName[@attributeName = 'attributeValue']
+
+	//tagName[text()='full text']
+
+       	 //tagName[contains(@attributeName,'attributeValue')]
+
+	//tagName[contains(text(),'half of the text')]  --> //a[contains(text(),'Kitchen')]
+	
+	//tagName[normalize-space()='text']    ->                  Wool double-breasted jacket -->(//*[normalize-space()='Wool double-breasted jacket'])[1]
+                
+	
+	(//tagName[@attributeName='attributeValue'])[index]    --> (//a[contains(text(),'Sellers')])[1]
+
+	
+***********************************************************************************************
+
+Absolute X-Path : 
+
+
+		It starts with single forward slash ( / )
+
+		It starts from html tag.
+
+		
+************************************************************************************************************
+Day - 4
+WebElement Methods:
+clear()
+click()
+sendKeys()
+isenabled()  -->boolean
+isDisplayed() --> Boolean
+getText()
+getAttribute()
+
+*********************************************************************************************************************
+Day - 5
+
+implict casting:
+byte to int
+byte a = 10;
+syntax:
+datatype refName = existingrefName;
+int b = a;  (typecasting will be done automatically)
+
+Expicit casting:
+int to byte
+int c = 126;
+syntax:
+datatype refName = (datatype)existingrefName;
+byte d = (byte)c;
+
+WebDriver to TakesScreenshot
+
+TakesScreenshot ts = (TakesScreenshot)WebDriver-refName
+
+
+Screenshot :
+Capture Screenshot using Selenium WebDriver
+Jar File:
+Apache Commons IO 2.11.0 (requires Java 8)
+ Selenium screenshots would be required:
+When application issues occur
+When an assertion failure occurs
+When there is some difficulty in finding web elements on a page
+Where there is a Timeout in finding web elements on a web page
+Taking Screenshot in Selenium is a 4 Step process:
+
+Step 1) Convert web driver object to TakeScreenshot
+TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+Step 2) Call getScreenshotAs method to create image file
+File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+Step 3) create a file file Location
+File dest=new File("");
+Step 4) Copy file to Desired Location
+FileUtils.copyFile(src, dest);
+ 
+int ---> byte
+int a = 100;
+
+datatype refName = (datatype) oldRefname;   //explicit casting or Narrowing
+byte b = (byte)a;
+
+
+TakesScreenshot  (Interface) 
+
+TakesScreenshot ts = (TakesScreenshot) driver;   // ----> narrowing type casting
+
+File source = ts.getScreenshotAs(OutputType.FILE);
+
+File destination = new File("path//name.format");
+
+FileUtils.copyFile(source, destination);
+
+
+type casting : 
+
+short s  = (short) long;  // narrowing type casting -> convert a higher datatype into lower datatype
+
+*************************************************************************************************************************************************************
+Day - 6
+click the element---> click();
+--->ElementClickNotInterceptable  (javascriptExecutor)
+how will you pass the value in text field ----->sendKeys();
+  --->ElementNotInterceptable  (javaScriptExecutor)
+scroll down ---->  (javaScriptExecutor)
+
+
+JavaScript Executor: 		
+JavaScriptExecutor is an Interface 
+It will allow us to execute JavaScript methods through Selenium webdriver
+In some place’s selenium can't be work at that time we use JavaScript to interact that Web element. 
+
+Syntax:
+JavascriptExecutor js = (JavascriptExecutor) driver;  
+js.executeScript(Script,Arguments);
+
+Script – This is the JavaScript that needs to execute.
+Arguments – It is the arguments to the script. It's optional.
+
+eg : 
+js.executeScript("arguments[0].scrollIntoView();", WebElementName)
+js.executeScript("window.scrollBy(0,range);") 
+js.executeScript("window.scrollBy(0, 1000);")---> Scroll down 
+js.executeScript("window.scrollBy(0, -3000);") ----> Scroll up
+js.executeScript("arguments[0].click();", webelementname ) --->  click
+js.executeScript("document.getElementById('some id').value='someValue';");  🡪 Value pass
+Js.executeScript("alert('hello world');"); -🡪 Alert msg
+js.executeScript("history.go(0)"); 🡪 Refresh
+string sText =  js.executeScript("return document.title;").toString(); 🡪 Get Title
+js.executeScript("return document.URL;").toString(); 🡪get url 
+js.executeScript("window.location = 'https://yahoo.com'"); 🡪 Navigator
+String string = js.executeScript("return document.documentElement.innerText;").toString();  -> get entire website texts
+js.executeScript("return arguments[0].innerHTML", Webelement).toString();  🡪 getText()
+
+****************************************************************************************************************************************************************
+Day -7
+DropDown : 
+
+	  Single dropdown
+
+	  Multiple dropdown
+
+
+Select : 
+
+	Select is a class...
+
+Syntax : 
+
+	Select s = new Select(element);
+
+	
+Select Methods : 
+
+
+		selectByValue()
+
+		selectByIndex()
+
+		selectByVisibleText()
+
+		deselectByValue()
+
+		deselectByIndex()
+
+		deselectByVisibleText()
+		
+		deselectAll() : It wont accept in single dropdown.
+
+		isMultiple() -- > To check the dropdown is single or multiple.
+
+		getOptions()  ---> 
+				It will return all the options in dropdown.
+
+				its return type is List<WebElement>.
+
+
+		getAllSelectedOptions() -->   10  --> 3
+
+					it will return all selected options in dropdown.
+
+					its return type is List<WebElement>.
+
+					it won't Accept in single dropdown.
+
+		getFirstSelectedOption() : 
+
+					It will return the first selected options in dropdown.
+
+					its return type is WebElement.
+
+					it will accept in single dropdown.
+
+
+*************************************************************************************************************************************************************
+Day - 8
+Alert : 
+
+	It is a interface.
+
+	It is a non-inspect
+
+Types : 
+
+	Simple alert 
+
+	Confirm alert 
+
+	Prompt alert 
+
+
+If alert is present we must switch to that alert.
+
+driver.switchTo().alert().
+
+Alert Methods : 
+
+		accept()
+
+		dismiss()
+
+		sendKeys()
+
+		getText()
+
+Simple Alert : 
+
+		It displays some information (or) warning in screen 
+
+		This popup has only a accept button.
+
+Confirm Alert :
+
+		It has a popup of both accept [ok] and dismiss [cancel] button .
+
+		We use accept for ok button.
+
+		We use dismiss for cancel button.
+		
+Prompt Alert :
+
+		it shows a message asking the user to send input 
+
+		After it returns the text we use accept or dismiss button.
+
+
+***********************************************************************************************************************************************
+                                             Day - 9
+Frame : 
+
+	It will have separate html Dom structure within the page.
+
+	we have to switch to the frame ---- like window and alert.
+
+	tagname => iframe
+
+Types : 
+
+	index
+
+	id (or) name
+
+	webelement
+
+parentframe : 
+
+	    From child frame to parent frame.(to outer)
+
+defaultcontent : 
+
+	    From frame to the main page. (application)	
+
+
+<html>
+
+<iframe>
+<html>
+
+</html>
+</iframe>
+
+</html>   
+
+*******************************************************************************************************
+
+Method Overloading :
+
+driver.switchTo().frame(id)
+
+driver.switchTo().frame(index)
+
+driver.switchTo().frame (webelement)
+
+*******************************************************************************************************
+
+Day - 10
+Actions: 
+	It is a class
+	It Performs the mouse and keyboard actions.
+	There are complex interactions like Drag-n-Drop and Double-click which cannot be done by simple WebElement commands. To handle those types of advance actions we have the Actions class in Selenium.
+Syntax: 
+	Actions objName = new Actions(driver);
+
+Methods in Actions class of Selenium
+There are a lot of methods in this class which can be categorized into two main categories:
+1.Keyboard Events
+2.Mouse Events
+
+Mouse based actions: 
+	click[WebElement] 🡪Clicks at the current mouse location.
+	contextClick [WebElement] 🡪Performs a right-click at the current mouse location.
+	doubleClick [WebElement] 🡪Performs a double-click at the current mouse location.
+	moveToElement[WebElement] 🡪Moves the mouse to the middle of the element
+	dragAndDrop[WebElement Source , WebElement Target] 🡪Click-and-hold at the location of the source element, moves to the location of the target element
+	clickandHold() 🡪
+
+For mouse based actions methods :
+			  	We must give build() and perform(). 
+				build() ---> all the actions gathered which are ready to be performed.
+				perform() ----> perform a sequence of actions.
+**********************************************************************************
+
+
+Keyboard based action :
+Robot class:
+It can be used to trigger the input events like mouse move, mouse click, keypress,
+      		           KeyPress 
+	       	            KeyRelease
+KeyEvent -> is a class and it performs the keyboard function.
+VK : Virtual Key
+Syntax  : 
+
+	Robot r = new Robot()
+	r.keyPress(KeyEvent.anyfunction)
+	r.keyRelease(KeyEvent.anyFunction)		
+
+
+****************************************************************************************************************
+
+
+Windows handling : 
+
+	window handle function helps in getting id of all the windows.
+
+
+Methods : 
+
+getWindowHandle() : 
+
+		    It returns a id of the current window (parent window)
+
+		    It's return type is String.
+
+getWindowHandles() : 
+
+		    It returns all id of the active window 
+
+		    It's return type is Set<String>.
+
+		    Each Window has a unique id so it's return type will be Set.
+
+**************************************************************************************************************************
+
+
+Wait 
+
+Script execution - Script will be executed before the webpage get loaded completely - End with Exception (NosuchElementException)
+Webpage loading - Webpage will be loaded faster before script get executed - End with success
+
+Wait - 
+Implicit wait 
+Explicit wait
+
+Implicit wait ---> it's applicable for two method (findElement and findElements)
+Explicit wait ---> Applicable based on the multiple conditions (text to be visible, visibility of element)
+
+
+Syntax: Implicit wait
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
+
+Synytax: Explicit wait
+
+Wait<WebDriver> wait = new WebDriverWait(driver, Duration.OfSeconds(30));
+wait.until(ExpectedConditions.call the Requiredmethods(WebElement refname));
+
+*********************************************************************************************************************************
+
+WebTable
+
+
+<table>
+
+<thead>.............
+<tr>
+<th> ---> header of column
+
+
+</tr>
+
+
+</thead>
+<tbody>............</tbody>
+<tr>
+<td>
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+
+
+tr--->tablerow
+th--->tableheader
+td---->tabledata
+thead--->table head (rows of the header)
+tbody --->table body (all the data other then header)
+
+
+*********************************************************************************
+Selenium Exception
+1.NotFoundException
+	NoSuchWindowException
+	NoSuchFrameException
+	NoSuchElementException
+	NoAlertPresentException
+2.PageLoadTimeOut------>TimeOutException
+3.StaleElementReferenceException -The referenced element is not present on the dom structure
+	Navigation to other page
+	DOM has Refreshed
+	A frame or window switch
+4.InvalidElementState
+	ElementNotVisibleException
+	ElementNotSelectableException
+5.SessionNotFoundException --> quit the browser and then still we try to run selenium code (deprecated)
+6.InvalidSelectorException (invalid syntax for x-path expression)
+7.unHandledAlertException (Trying to perform the action on web element before handling the alert)
+8.NoSuchDriverException (launch the driver not installed in your local machine)
+9.InvalidArgumentException (missing of http/https)
+10.JavaScriptException [syntax issue in javascript]
+11.NoSuchSessionException-->Browser session get closed and still we try to run selenium code
+12.SessionNotCreatedException -->Browser driver executable file version -incompatible with browser or selenium version  (deprecated)
+13.IllegalStateException-  We don't set the correct driver path  (deprecated)
+		
