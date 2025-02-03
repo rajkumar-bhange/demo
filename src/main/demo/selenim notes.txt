@@ -1,0 +1,6 @@
+   selenium:-
+             it is automation testing tools(web application)
+
+
+   QTP.(Quick testing professional) =....>window HP
+   
