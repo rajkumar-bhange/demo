@@ -1,3 +1,6 @@
 name 
 father name
 number
+e mail
+photo
+
