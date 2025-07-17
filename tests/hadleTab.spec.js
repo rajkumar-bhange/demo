@@ -16,3 +16,11 @@ test('page_navigation',async({page})=>{
 
         
 })
+
+test.only('flh',async({page})=>{
+    await page.goto('https://www.youtube.com/')
+    await page.locator('(//a[@aria-haspopup="false"])[3]').click();
+    await page.waitForTimeout(3000)
+    await page.goBack();
+
+})
